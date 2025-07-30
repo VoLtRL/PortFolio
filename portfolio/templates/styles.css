@@ -1,0 +1,23 @@
+.carousel {
+  display: flex;
+  overflow-x: auto;         /* Permet le défilement horizontal */
+  scroll-snap-type: x mandatory; /* Pour un effet de "snap" */
+  -webkit-overflow-scrolling: touch; /* Meilleure fluidité sur mobile */
+  list-style: none;         /* Supprime les puces */
+  padding: 0;
+  margin: 0;
+  gap: 1rem;                /* Espace entre les éléments */
+}
+
+.carousel-elt {
+  flex: 0 0 auto;           /* Empêche les éléments de rétrécir */
+  scroll-snap-align: start;/* Alignement du snap */
+  width: 350px;             /* Largeur des éléments */
+  height: 200px;
+  background: #ddd;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
